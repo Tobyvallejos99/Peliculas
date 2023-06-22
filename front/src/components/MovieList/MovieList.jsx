@@ -49,11 +49,17 @@ function MovieList() {
     history.push(`/editmovie/${movieId}`);
   };
 
+  const handleLoginClick = () => {
+    history.push('/login');
+  };
 
   return (
     <div>
       <button className={styles.animatedButton} onClick={handleImportCSV}>
         Import CSV
+      </button>
+      <button className={styles.animatedButton2} onClick={handleLoginClick}>
+        Login
       </button>
       <div className={styles.container}>
         <h1 className={styles.title}>Movies List</h1>
