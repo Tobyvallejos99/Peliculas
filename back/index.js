@@ -4,10 +4,10 @@ const listmoviesRoutes = require('./routes/movies');
 const addmovieRoutes = require('./routes/addmovies');
 const editmovieRoutes = require('./routes/editmovies');
 const sequelize = require('./db');
+const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const morgan = require('morgan');
 
-// Configuración de Multer
 
 // Middleware
 app.use(express.json());
@@ -23,6 +23,21 @@ app.use('/movies', listmoviesRoutes);
 // Ruta para editar, eliminar y agregar películas
 app.use('/editmovie', editmovieRoutes);
 
+// Ruta para el inicio de sesión
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+
+    if (username === 'usuario' && password === 'contraseña') {
+
+      const payload = { username };
+
+      const token = jwt.sign(payload, 'clave_secreta', { expiresIn: '1h' });
+
+      res.json({ token });
+    } else {
+      res.status(401).json({ error: 'Credenciales inválidas' });
+    }
+  });
 
 sequelize
   .sync()
