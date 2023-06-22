@@ -21,4 +21,4 @@ npm start
 
 (se va a levantar en cliente en el puerto 3000)
 
-si por algun motivo hay algun error, instalar dependecias necesarias manualmente como csv-parcer, react-router-dom, multer, etc.
+si por algun motivo hay algun error, instalar dependecias necesarias manualmente como csv-parser, react-router-dom, multer, etc.
