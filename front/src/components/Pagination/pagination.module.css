@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pageItem {
+  margin: 0 5px;
+}
+
+.pageLink {
+  background-color: #7c0909;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+
+  &:hover {
+    background-color: #5c0707;
+  }
+}
+
+.active {
+  background-color: #333;
+  color: #fff;
+}

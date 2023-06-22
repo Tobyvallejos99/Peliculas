@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.dropzone {
+  width: 300px;
+  color: aliceblue;
+  height: 150px;
+  border: 2px dashed #e70808;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.dropzone:hover {
+  border-color: #ff3838;
+}
+
+.dropzone p {
+  font-size: 14px;
+}
+
+.successMessage {
+  color: green;
+  font-size: 14px;
+}
+
+.backButton {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  margin-top: 20px;
+}
+
+.backButton:hover {
+  color: #ff3838;
+}

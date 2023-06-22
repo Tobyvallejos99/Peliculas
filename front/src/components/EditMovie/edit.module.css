@@ -1,0 +1,67 @@
+/* edit.module.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #6e0505a1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  
+  table {
+    width: 100%;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+    color: #ffffff;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #020202;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input[type='text'],
+  input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #b90202;
+    color: #fff;
+    border:#ffffffa1;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+
+  
